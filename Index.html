@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="\Css\Estilos.css">
+    <title>Trabajo practico integrado JS</title>
+  </head>
+  
+  <body>
+
+    <header>
+
+        <ul>
+          <li><a href="#" title=""style="font-size:130%;">Conf Bs As</a></li>
+        </ul>
+        <ul>
+          <li><a class="ItemDesactivado" href="#" title="">La conferencia</a></li>
+          <li><a class="ItemDesactivado" href="#" title="">Las oradores</a></li>
+          <li><a class="ItemDesactivado" href="#" title="">El lugar y la fecha</a></li>
+          <li><a href="#" title="">Conviértete en orador</a></li>
+          <li><a href="#" title="" style="color:green">Comprar tickets</a></li>
+        </ul>
+
+    
+    </header>
+
+    <div class="container" style="margin-top:0%; padding: 1%; width:fit-content">
+      <div class="row" style="margin:0%; padding: 0%;">
+
+        <div class="col" style=" display: flex; justify-content: right; padding:0.3%; margin: 0%;">
+          <div class="card">
+            <div class="card-body" style="border-color:rgba(0, 0, 255, 0.89);border-style:groove;text-align:center;padding: 5%">
+              <h5 class="card-title">Estudiante</h5>
+              <br>
+              <p class="card-text">Tienen un descuento</p>
+              <p class="card-text">80%</p>
+              <p class="card-text">*presentar documentación</p>
+            </div>
+          </div>
+        </div>            
+
+        <div class="col" style=" display: flex; justify-content: center; padding:0.3%; margin: 0%;">
+          <div class="card">
+            <div class="card-body" name="Trainne" style="border-color:rgba(33, 164, 196, 0.89);border-style:groove;text-align:center;padding: 5%">
+              <h5 class="card-title">Trainee</h5>
+              <br>
+              <p class="card-text">Tienen un descuento</p>
+              <p class="card-text">50%</p>
+              <p class="card-text">*presentar documentación</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" style=" display: flex; justify-content: left; padding:0.3%; margin: 0%;">
+          <div class="card">
+            <div class="card-body" name="Junior" style="border-color:rgba(250, 213, 3, 0.89);border-style:groove;text-align:center;padding: 5%">
+              <h5 class="card-title">Junior</h5>
+              <br>
+              <p class="card-text">Tienen un descuento</p>
+              <p class="card-text">15%</p>
+              <p class="card-text">*presentar documentación</p>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      
+      <div class="row">
+        <p style="padding:0%; margin:0%; text-align:center;">VENTA</p>
+      </div>
+      
+      <div class="row" style="padding:0%; margin:0%">
+        <p style="font-size:200%; font-weight:500; padding:0%; margin:0%; text-align:center;">VALOR DEL TICKET $200</p>
+      </div>
+
+      <div class="row">
+        <div class="col" style=" padding:0.5%; margin: 0%;">
+          <input Id="" onclick="" name="Nombre" type="text" value="Nombre" maxlength="30" style="justify-content: left; padding: 0%; width:99%;">
+        </div>
+        
+        <div class="col" style=" padding:0.5%; margin: 0%;">
+          <input Id="" onclick="" name="Apellido" type="text" value="Apellido" maxlength="30" style="justify-content: right; padding: 0%; width: 100%;">
+        </div>        
+      </div>
+
+      <div class="row">
+        <div class="col" style=" padding:0.5%; margin: 0%;">
+          <input onclick="" name="CorreoElectronico" type="text" value="Correo electronico" maxlength="30" style="justify-content: left; padding: 0%; width:100%;">
+        </div>     
+      </div>
+
+      <div class="row">
+        <div class="col" style="padding:0%; margin-left: 0.5%;">
+          <label style="padding:0%; margin: 0%;">Cantidad</label>
+        </div>     
+        <div class="col" style="padding:0%; margin-left: 0.5%;">
+          <label style="padding:0%; margin: 0%;">Categoria</label>
+        </div>     
+      </div>
+
+      <div class="row">
+
+        <div class="col" style="padding:0%; margin: 0.5%;">
+          <input onclick="LimpiarCantidad()" name="Cantidad" type="text" value="Cantidad" maxlength="1" style="justify-content: left; padding: 0%; width:100%;">
+        </div>     
+        
+        <div class="col" style="padding:0%; margin: 0.5%;">
+          <select name="Lista" style="margin: 0%; padding: 0%; height:100%; width:100%;">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Trainee">Trainee</option>
+            <option value="Junior">Junior</option>
+          </select>        
+        </div>     
+      </div>  
+      <br>
+     
+      <div class="row" style="padding:0%; margin: 0%; height: 0%; width: 100%;">
+
+        <div class="col" style="padding:0%; margin: 0%; height: 100%; width: 100%;">
+
+          <label name="TotalaPagar" style="background-color: rgb(135, 206, 235) ; border-radius: 3px; color: blue; height: 100%; margin: 0%; padding:1em; width:100%; text-align: left;">Total a pagar: $</label>
+
+        </div>
+
+      </div>      
+        
+      <br>
+      <br>
+      <br>
+        
+      <div class="row">
+
+        <div class="col" style="padding:0%; margin: 0.5%; height: 100%; width: 99%;">
+          <button type="button" onclick="Borrar()" style="background-color: rgb(57, 235, 66) ; border-radius: 3px; border-style: none; color:white; padding: 1.5%; margin: 0%; height: 100%; width: 100%;">Borrar</button>            
+        </div>
+
+        <div class="col" style="padding:0%; margin: 0.5%; height: 100%; width: 99%;">
+          <button type="button" onclick="VerificarCampos()" style="background-color: rgb(57, 235, 66) ; border-radius: 3px; border-style: none; color:white; padding: 1.5%; margin: 0%; height: 100%; width: 100%;">Resumen</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer style="background: rgb(67, 70, 110); bottom:0; color:white; padding: 2%;">
+
+      <div class="container">
+        <div class="row" style="height:50px">
+          <div class="col">
+            <a href="#" style="color:white; text-decoration: none;">Preguntas frecuentes</a>
+          </div>
+          <div class="col">
+            <a href="#" style="color:white; text-decoration: none;">Contáctanos</a>
+          </div>
+          <div class="col">
+            <a href="#" style="color:white; text-decoration: none;">Prensa</a>
+          </div>
+          <div class="col">
+            <a href="#" style="color:white; text-decoration: none;">Conferencias</a>
+          </div>
+          <div class="col">
+            <a href="#" style="color:white; text-decoration: none;">Terminos y condiciones</a>
+          </div>
+          <div class="col">
+            <a href="#" style="color:white; text-decoration: none;">Privacidad</a>
+          </div>
+          <div class="col">
+            <a href="#" style="color:white; text-decoration: none;">Estudiantes</a>
+          </div>
+        </div>
+      </div>
+      
+      
+    </footer>
+    <script src=\Js\Funciones.js rel="script"></script>
+  </body>
+</html>

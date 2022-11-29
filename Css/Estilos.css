@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;    
+}
+
+header {
+    background-color:black;
+    display: flex;    
+    justify-content:space-between;
+    margin: 0%;
+    padding: 0%;
+}
+
+ul {
+    background-color:black;
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;    
+}
+
+.ItemDesactivado {
+    pointer-events:none;
+    color: grey;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    background-color: black;
+    color: white;
+    display: block;
+    font-size: 115%;
+    margin: 0%;
+    padding: 24px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(188, 207, 19);
+}
